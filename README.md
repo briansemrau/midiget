@@ -14,6 +14,11 @@ python midiget http://www.vgmusic.com/ 1000
 ```
 If the second argument is not provided, the maximum number of pages is defaulted to 1000.
 
+You can specify the output directory as the third argument:
+```
+python midiget http://www.vgmusic.com/ 1000 ../vgmusic
+```
+
 The files downloaded are saved in a directory called 'midisaves', placed in the root directory of the programme.
 
 # Installation
@@ -26,4 +31,5 @@ unzip midiget-master.zip
 You need to have beautifulsoup4 installed in order to run midiget. To install beautifulsoup4, run this code from the command line:
 ```
 $ pip install beautifulsoup4
+$ pip install requests
 ```
